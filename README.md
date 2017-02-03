@@ -28,3 +28,4 @@ The lights turn off by taking the lights from 100% duty cycle to 0% duty cycle o
 Before this, a warning that they are turning off and a request to turn on the room lights is played.
 Once the duty cycle hits zero, the outputs are turned off and the PowerTail is switched off, then an endless loop is entered.
 
+The sound files in "Cuts" are all .mp3 files that are called by filename in the program.  Numbers are called by converting the current number needed (such as "35" in 35 minutes) to a string, appending ".mp3" to it, and running it through the call to the Music Maker play file routine.  Note:  The Music Maker rountine only uses 8.3 naming convention, and I don't check for that, so if you call a file with a longer filename than 8 characters, it won't play and won't throw an error.
